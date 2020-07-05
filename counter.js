@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("*").each(function (index, element) {
             // element == this當下搜尋的元素
             // var 變數=資料
-            var offset = $(this).offset();                       取得元素位移資料
+            var offset = $(this).offset();                     
             var top = offset.top;
            
             var windowTop = $(window).scrollTop();
@@ -17,8 +17,8 @@ $(document).ready(function(){
             var number = $(this).attr("data-counter-number");
             var time = $(this).attr("data-counter-time");
              var offset = $(this).attr("data-counter-offset");
+            
              // 判斷式
-             // 如果 發生甚麼事 就...
              //  if (條件) {程式}
              if(windowTop > top - offset) {
                  //console.log("開始執行動畫...");
